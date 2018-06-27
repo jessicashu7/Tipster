@@ -9,10 +9,9 @@
 #import "ViewController.h"
 
 @interface ViewController ()
-@property (weak, nonatomic) IBOutlet UITextField *billField;
 @property (weak, nonatomic) IBOutlet UILabel *tipLabel;
 @property (weak, nonatomic) IBOutlet UILabel *totalLabel;
-
+@property (weak, nonatomic) IBOutlet UITextField *billField;
 @property (weak, nonatomic) IBOutlet UISegmentedControl *tipControl;
 
 @end
@@ -23,7 +22,6 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
 }
-
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
@@ -42,8 +40,10 @@
     
     double tip = tipPercentage * bill;
     double total = bill + tip;
-    
-    
+    NSLog(@"tip %f", tip);
+    NSLog(@"total %f", total);
+    NSLog(@"bill %f", bill);
+
     
     self.tipLabel.text = [NSString stringWithFormat:@"$%.2f", tip];
     self.totalLabel.text = [NSString stringWithFormat:@"$%.2f", total];

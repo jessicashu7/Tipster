@@ -58,19 +58,6 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Dya-VO-wdk">
-                                <rect key="frame" x="206" y="95" width="153" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <gestureRecognizers/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                                <connections>
-                                    <action selector="onEdit:" destination="BYZ-38-t0r" eventType="editingChanged" id="yNq-7D-6CD"/>
-                                    <action selector="onEditingBegin:" destination="BYZ-38-t0r" eventType="editingDidBegin" id="86S-WN-caV"/>
-                                    <action selector="onEditingEnd:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="d7z-sE-il4"/>
-                                </connections>
-                            </textField>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="iTE-cT-ml1">
                                 <rect key="frame" x="30" y="320" width="320" height="29"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -83,6 +70,19 @@
                                     <action selector="onEdit:" destination="BYZ-38-t0r" eventType="valueChanged" id="w1Y-QS-Ffh"/>
                                 </connections>
                             </segmentedControl>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Dya-VO-wdk">
+                                <rect key="frame" x="206" y="91" width="153" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="onEdit:" destination="BYZ-38-t0r" eventType="editingChanged" id="yNq-7D-6CD"/>
+                                    <action selector="onEditingBegin:" destination="BYZ-38-t0r" eventType="editingDidBegin" id="86S-WN-caV"/>
+                                    <action selector="onEditingEnd:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="d7z-sE-il4"/>
+                                </connections>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <gestureRecognizers/>
@@ -93,7 +93,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="Tips" id="Lor-yX-xWY"/>
                     <connections>
-                        <outlet property="billField" destination="jjW-0X-kpT" id="1Yg-zk-76x"/>
+                        <outlet property="billField" destination="Dya-VO-wdk" id="4Sn-sl-wlG"/>
                         <outlet property="tipControl" destination="iTE-cT-ml1" id="pqO-PE-xfz"/>
                         <outlet property="tipLabel" destination="nMc-9k-ayg" id="Cib-DG-jd2"/>
                         <outlet property="totalLabel" destination="jjW-0X-kpT" id="J6N-x2-QEZ"/>
@@ -111,8 +111,8 @@
         <!--Storyboard Reference-->
         <scene sceneID="FhU-e0-T5E">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="8ih-LL-gvg" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewControllerPlaceholder id="6ET-y1-dOa" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8ih-LL-gvg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-415" y="158"/>
         </scene>
